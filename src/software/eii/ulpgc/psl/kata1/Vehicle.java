@@ -12,4 +12,24 @@ public class Vehicle {
         this.brand = brand;
         this.id = id;
     }
+
+    @Override
+    public String toString() {
+        return "Coche: " +
+                "Fecha de venta = " + soldDate +
+                ", Marca = '" + brand + '\'' +
+                ", Matricula = '" + id + '\'';
+    }
+
+    public LocalDate getSoldDate() {
+        return soldDate;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public String getId() {
+        return id;
+    }
 }
